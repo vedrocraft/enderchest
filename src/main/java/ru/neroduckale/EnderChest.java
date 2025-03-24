@@ -16,14 +16,13 @@ public final class EnderChest extends JavaPlugin implements BaseCommons {
 
         LiteCommandBuilder.builder()
                 .commands(new EnderChestCommand(
-                        getService(ConfigService.class)
-                ))
+                        getService(ConfigService.class))
+                )
                 .build();
-
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        ServiceManager.disableServices();
     }
 }

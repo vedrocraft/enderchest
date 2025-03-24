@@ -21,12 +21,11 @@ public class EnderChestCommand {
     @Permission("enderchest.reload")
     void reload(@Context CommandSender sender) {
         configService.reload();
-
         PlayerUtil.sendMessage(sender, (String) configService.get("reload-message"));
     }
 
-    @Permission("enderchest.open")
     @Execute
+    @Permission("enderchest.open")
     void openEnderChest(@Context Player sender) {
         sender.openInventory(sender.getEnderChest());
     }
