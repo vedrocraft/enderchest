@@ -60,6 +60,11 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>reposilite-repository-releases</id>
+            <name>Reposilite Repository</name>
+            <url>https://maven.vedrocraft.space/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
